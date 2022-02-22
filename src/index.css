@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  max-width: 1000px;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  border: 1px solid #ccc;
+}
+
+.btn-main {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btn-main button {
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-top: 5px solid transparent;
+    transition: all 300ms;
+}
+
+.btn-main button.active-btn {
+  border-top: 5px solid dodgerblue;
+  border-bottom: none;
+  background-color: #fff;
+}
+
+.content-main {
+  padding: 1rem;
+}
+
+.content-main .content {
+  display: none;
+}
+
+.content-main .content.active-content {
+  display: block;
+}
